@@ -1,0 +1,157 @@
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+}
+.header{
+    background: #424242;
+    display: flex;
+}
+h1{
+    padding: 92px 0px 91px 173px;
+}
+h2{
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 36px;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+}
+h3,h4,h5{
+    font-family: AppleSystemUIFont;
+    font-size: 12px;
+    color: #424242;
+    padding: 25px 0px 25px 42px;
+    margin-left: 30px;
+}
+.record {
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bmiInF{
+    display: flex;
+    flex-direction: column;
+    padding-top: 51px;
+    padding-left: 97px;
+}
+.bmiInF label{
+    font-family:AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366;
+    margin-top: 23px;
+}
+.height{
+    width: 250px;
+    height: 40px;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+}
+.weight{
+    width: 250px;
+    height: 40px;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+}
+.result{
+    display: flex;
+    margin:92px 0px 88px 53px;
+}
+.circle{
+    background: #FFD366;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+.resultBMI{
+    display: none;
+}
+.resultBMI p{
+    font-family:SFNSDisplay;
+    font-size: 32px;
+    padding-left: 18px;
+    padding-top: 50px;
+}
+.resultCircle{
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+}
+.resultCircle P{
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.restart{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    position: absolute;
+    bottom:-5px;
+    right:-5px;
+    border-radius: 50%;
+}
+.restart:hover{
+    transform:rotate(90deg);
+}
+.list{
+    margin: 30px 80.5px 30px 80.5px;
+}
+.time{
+    position: absolute;
+    top: 25px;
+    right:100px;
+
+}
+.bmi-item{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 0 3px 0;
+    margin-top: 16px; 
+    position: relative;
+}
+.bmi-item>p{
+    font-family: SFNSDisplay;
+    font-size: 20px;
+    color: #4A4A4A; 
+    margin: 25px 0px 21px 7px; 
+}
+.bodytype{
+    font-family: SFNSDisplay;
+    font-size: 20px;
+    color: #4A4A4A;
+    padding-left: 12px;
+}
+.deletbtn{
+    position: absolute;
+    top:0px;
+    right:10px;
+    text-decoration: none;
+    margin: 25px 20px 21px 0px;
+    color: black; 
+}
+.deletbtn:hover{
+    color: red;
+    font-size: 20px;
+}
+.footer{
+    background: #FFD366; 
+    
+}
+.footer img{
+    filter:invert(1);
+    width: 55px;
+    padding:18px 485px 17px 485px ;
+}
