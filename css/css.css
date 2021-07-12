@@ -106,9 +106,12 @@ h3,h4,h5{
 .restart:hover{
     transform:rotate(90deg);
 }
+.content{
+    position: relative;
+}
 .deletall{
     position: absolute;
-    right: 530px;
+    right: 80px;
 }
 .deletall a{
     background-color: #FFD366;
