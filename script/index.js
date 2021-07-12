@@ -7,6 +7,7 @@ let resultCircle = document.querySelector('.resultCircle');
 let restartBtn = document.querySelector('.restartBtn');
 let button = document.querySelector('.button');
 let clear = document.querySelector('.deletall');
+let record = document.querySelector('.record');
 let data = JSON.parse(localStorage.getItem('bmiData'))||[];
 
 //運算主程式
@@ -164,14 +165,14 @@ function checkContent(){
     let heightStr = document.querySelector('.height').value;
     let weightStr = document.querySelector('.weight').value;;
     if(heightStr==''){
-        alert('請填入身高')
-        return
-        };
-    if(weightStr==''){
-        alert('請填入體重')
-        return
-        };
-    BMIcount();
+            record.innerHTML=`<h2 style="color: red;">請輸入身高!</h2>`
+        }else if(weightStr==''){
+            record.innerHTML=`<h2 style="color: red;">請輸入體重!</h2>`
+            }else{
+                record.innerHTML=`<h2>BMI紀錄</h2>`    
+            BMIcount();
+            };;
+    
 }
 function deletAll(e){
     //console.log(e.target.nodeName);
