@@ -106,6 +106,20 @@ h3,h4,h5{
 .restart:hover{
     transform:rotate(90deg);
 }
+.deletall{
+    position: absolute;
+    right: 180px;
+}
+.deletall a{
+    background-color: #FFD366;
+    padding:10px 5px 5px 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.deletall a:hover{
+    color: red;
+}
 .list{
     margin: 30px 80.5px 30px 80.5px;
 }

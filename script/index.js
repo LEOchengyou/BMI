@@ -6,10 +6,11 @@ let resultBMI = document.querySelector('.resultBMI');
 let resultCircle = document.querySelector('.resultCircle');
 let restartBtn = document.querySelector('.restartBtn');
 let button = document.querySelector('.button');
+let clear = document.querySelector('.deletall');
 let data = JSON.parse(localStorage.getItem('bmiData'))||[];
 
 //運算主程式
-function BMIcount(e){
+function BMIcount(){
     Height = parseInt(height.value);
     Weight = parseInt(weight.value);
     let BMI = (Weight/Math.pow(Height/100,2))
@@ -139,7 +140,7 @@ function updateList(){
   
 }
 
-function reset(e){
+function reset(){
     event.preventDefault();
     circle.style.display='block';
     resultCircle.style.display='none';
@@ -172,7 +173,16 @@ function checkContent(){
         };
     BMIcount();
 }
+function deletAll(e){
+    //console.log(e.target.nodeName);
+    if(e.target.nodeName!=='A'){ 
+       return
+    }
+    localStorage.clear();
+    updateList();
+}
 //監聽
 circle.addEventListener('click',checkContent,false);
 resultCircle.addEventListener('click',reset,false)
 list.addEventListener('click',delet,false);
+clear.addEventListener('click',deletAll,false);
